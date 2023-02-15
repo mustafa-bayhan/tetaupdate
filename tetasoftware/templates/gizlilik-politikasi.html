@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="tr">
+  <head>
+    <title>TETA | Gizlilik Politikası</title>
+    <meta name="Author" content="TETASOFTWARE">
+    <meta name="keywords" content="Teta, Tetasoftware, Dijitalleşme, Sosyal Medya Yönetimi, Veri Analizi, SEO, Web Programlama, Kurumsal Site, E-ticaret, E-ticaret sitesi, Dijital Dönüşüm">
+    <meta name="description" content="Teta Tetasoftware Dijitalleşme ve dijital dönüşüm alanında danışmanlık, kurumsal website tasarımları, sosyal medya yönetimi, e-ticaret ve daha fazlası"/>
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="/media/images/t.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+       <img src="/media/images/teta-logo-2.png" alt="" width="270px">
+      </div>
+    </div>
+    <div class="page">
+      <!-- Top Banner-->
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="/"><img src="/media/images/teta-logo-2.png" alt=""/></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    
+                    <div class="rd-navbar-search">
+                      <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                      <form class="rd-search" action="" method="GET">
+                        {% csrf_token %}
+                        <div class="form-wrap">
+                          <label class="form-label" for="rd-navbar-search-form-input">Ara...</label>
+                          <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                        </div>
+                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                      </form>
+                    </div>
+                    <!-- RD Navbar Share
+                    <div class="rd-navbar-share fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list">
+                      <ul class="list-inline rd-navbar-share-list">
+                        <li class="rd-navbar-share-list-item"><a href="https://www.linkedin.com/company/tetasoftware" target="_blank"><i class="icon fa fa-linkedin"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="https://twitter.com/tetasoftware" target="_blank"><i class="icon fa fa-twitter"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="https://instagram.com/tetasoftware" target="_blank"><i class="icon fa fa-instagram"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="mailto:info@tetasoftware.com" target="_blank"><i class="icon fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>-->
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/">Ana Sayfa</a>
+                      </li>
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="/about-us">Hakkımızda</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/services">Hizmetler</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/blog">Blog</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/career">Kariyer</a>
+                      </li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="/contact-us">İletişim</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="rd-navbar-project-hamburger" data-rd-navbar-toggle=".rd-navbar-main">
+                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                    <div class="project-close"><span></span><span></span></div>
+                  </div>
+                </div>
+                <div class="rd-navbar-project rd-navbar-classic-project">
+                  <h4 class="text-spacing-50">Neler Yaptık?</h4>
+                  <div class="rd-navbar-project-content rd-navbar-classic-project-content">
+                    <div class="row" data-lightgallery="group">
+
+                      {% for site in website %}
+                      <div class="col-12">
+                        <article class="thumbnail thumbnail-mary">
+                          <div class="thumbnail-mary-figure"><a href="{{site.url}}" target="_blank"><img src="{{site.image.url}}" alt="" /></a>
+                          </div>
+                          
+                        </article>
+                      </div>
+                      {% endfor %}
+
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+
+
+       <!-- Breadcrumbs -->
+       <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom context-dark bg-overlay-60">
+          <div class="container">
+            <h2 class="breadcrumbs-custom-title">GİZLİLİK POLİTİKASI</h2>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="/">ANA SAYFA</a></li>
+              <li class="active">GİZLİLİK POLİTİKASI</li>
+            </ul>
+          </div>
+          <div class="box-position" style="background-image: url(/media/images/about.webp);"></div>
+        </div>
+      </section>
+
+      
+      <section class="text-gizlilik" style="text-align: left;">
+        
+        <h5>Gizlilik (Çerez) Politikası</h5>
+       <p>Son güncellenme: 21/12/2022 <br>
+        Güvenliğiniz bizim için önemli. Bu sebeple bizimle paylaşacağınız kişisel verileriz hassasiyetle korunmaktadır.
+        Biz, Şirket Adı, veri sorumlusu olarak, bu gizlilik ve kişisel verilerin korunması politikası ile, hangi kişisel verilerinizin hangi amaçla işleneceği, işlenen verilerin kimlerle ve neden paylaşılabileceği, veri işleme yöntemimiz ve hukuki sebeplerimiz ile; işlenen verilerinize ilişkin haklarınızın neler olduğu hususunda sizleri aydınlatmayı amaçlıyoruz.
+</p><br><h5>Toplanan Kişisel Verileriniz, Toplanma Yöntemi ve Hukuki Sebebi</h5>
+       <p>IP adresiniz ve kullanıcı aracısı bilgileriniz, sadece analiz yapmak amacıyla ve çerezler (cookies) vb. teknolojiler vasıtasıyla, otomatik veya otomatik olmayan yöntemlerle ve bazen de analitik sağlayıcılar, reklam ağları, arama bilgi sağlayıcıları, teknoloji sağlayıcıları gibi üçüncü taraflardan elde edilerek, kaydedilerek, depolanarak ve güncellenerek, aramızdaki hizmet ve sözleşme ilişkisi çerçevesinde ve süresince, meşru menfaat işleme şartına dayanılarak işlenecektir.
+      <br>
+    </p><br><h5>Kişisel Verilerinizin İşlenme Amacı</h5>
+       <p>Bizimle paylaştığınız kişisel verileriniz sadece analiz yapmak suretiyle; sunduğumuz hizmetlerin gerekliliklerini en iyi şekilde yerine getirebilmek, bu hizmetlere sizin tarafınızdan ulaşılabilmesini ve maksimum düzeyde faydalanılabilmesini sağlamak, hizmetlerimizi, ihtiyaçlarınız doğrultusunda geliştirebilmek ve sizleri daha geniş kapsamlı hizmet sağlayıcıları ile yasal çerçeveler içerisinde buluşturabilmek ve kanundan doğan zorunlulukların (kişisel verilerin talep halinde adli ve idari makamlarla paylaşılması) yerine getirilebilmesi amacıyla, sözleşme ve hizmet süresince, amacına uygun ve ölçülü bir şekilde işlenecek ve güncellenecektir.
+      </p><br><h5>Toplanan Kişisel Verilerin Kimlere ve Hangi Amaçlarla Aktarılabileceği</h5> <br>
+        Bizimle paylaştığınız kişisel verileriniz; faaliyetlerimizi yürütmek üzere hizmet aldığımız ve/veya verdiğimiz, sözleşmesel ilişki içerisinde bulunduğumuz, iş birliği yaptığımız, yurt içi ve yurt dışındaki 3. şahıslar ile kurum ve kuruluşlara ve talep halinde adli ve idari makamlara, gerekli teknik ve idari önlemler alınması koşulu ile aktarılabilecektir.
+   <br>  <br>  <h5>Kişisel Verileri İşlenen Kişi Olarak Haklarınız</h5> <br>
+        KVKK madde 11 uyarınca herkes, veri sorumlusuna başvurarak aşağıdaki haklarını kullanabilir: 
+<br>
+        &emsp;• Kişisel veri işlenip işlenmediğini öğrenme, <br>
+        &emsp;• Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,<br>
+        &emsp;• Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,<br>
+        &emsp;• Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,<br>
+        &emsp;• Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,<br>
+        &emsp;• Kişisel verilerin silinmesini veya yok edilmesini isteme, <br>
+        &emsp;• (e) ve (f) bentleri uyarınca yapılan işlemlerin, kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,<br>
+        &emsp;• İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,<br>
+        &emsp;• Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme, haklarına sahiptir. <br>
+        Yukarıda sayılan haklarınızı kullanmak <a href="mailto:info@tetasoftware.com">info@tetasoftware.com</a> üzerinden bizimle iletişime geçebilirsiniz.
+    <br>
+    <br>
+    <h5>İletişim</h5> 
+       <p>Sizlere hizmet sunabilmek amaçlı analizler yapabilmek için, sadece gerekli olan kişisel verilerinizin, işbu gizlilik ve kişisel verilerin işlenmesi politikası uyarınca işlenmesini, kabul edip etmemek hususunda tamamen özgürsünüz. Siteyi kullanmaya devam ettiğiniz takdirde kabul etmiş olduğunuz tarafımızca varsayılacak olup, daha ayrıntılı bilgi için bizimle <a href="mailto:info@tetasoftware.com">info@tetasoftware.com</a> adresi üzerinden iletişime geçmekten lütfen çekinmeyiniz.</p> 
+        
+
+    </section>
+      
+
+    <footer class="section section-fluid footer-classic">
+      <div class="container-fluid">
+        <div class="row row-30 justify-content-center">
+          <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
+            <div class="box-footer box-footer-small">
+              <div class="footer-brand"><a href="index.html"><img src="/media/images/teta-logo-2.png" alt="" width="229" height="43"/></a></div>
+              <p class="text-width-medium">TETA Software & Consultancy, sektörün dinamiklerini çok iyi bilen, insan odaklı, müşterilerinin gereksinimlerinin farkında, özgün ve yaratıcı fikirler ortaya çıkarmakta profesyonel bir ekibin ürünüdür.</p>
+              <div class="contact-classic">
+                <div class="contact-classic-item"></div>
+                <div class="contact-classic-item">
+                  <div class="unit align-items-center">
+                    <div class="unit-left">
+                      <h6 class="contact-classic-title">Sosyal Medyada Biz</h6>
+                    </div>
+                    <div class="unit-body contact-classic-link">Tüm sosyal medyalarda @tetasoftware</div>
+                  </div>
+                </div>
+                <div class="contact-classic-item">
+                  <div class="unit align-items-center">
+                    <div class="unit-left">
+                      <h6 class="contact-classic-title">Neredeyiz</h6>
+                    </div>
+                    <div class="unit-body contact-classic-link">Ankara, İstanbul, Adana, Mersin
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-classic-item">
+                  <div class="unit align-items-center">
+                    <div class="unit-left">
+                      <h6 class="contact-classic-title">E-posta adresimiz</h6>
+                    </div>
+                    <div class="unit-body contact-classic-link"><a href="mailto:info@tetasoftware.com"> info@tetasoftware.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="list-inline list-inline-sm footer-social-list">
+                <li><a class="icon fa-brands fa-envelope" href="mailto:info@tetasoftware.com"></a></li>
+                <li><a class="icon fa fa-twitter" href="https://twitter.com/tetasoftware"></a></li>
+                <li><a class="icon fa fa-linkedin" href="https://www.linkedin.com/company/tetasoftware"></a></li>
+                <li><a class="icon fa fa-instagram" href="https://instagram.com/tetasoftware"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+            <div class="box-footer">
+              <h3 class="font-weight-normal">HİZMETLER</h3>
+              <ul class="footer-list-category">
+                <li class="heading-5"><a href="/services">Web site tasarİmİ<span></span></a></li>
+                <li class="heading-5"><a href="/services">Marka tasarİmİ<span></span></a></li>
+                <li class="heading-5"><a href="/services">E-ticaret çözümleri<span></span></a></li>
+                <li class="heading-5"><a href="/services">Dijital tasarİm<span></span></a></li>
+                <li class="heading-5"><a href="/services">Sosyal medya yönetimi<span></span></a></li>
+                <li class="heading-5"><a href="/services">Analizler ve planlamalar<span></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
+            <div class="box-footer">
+              <h3 class="font-weight-normal">GEZİNTİ</h3>
+              <ul class="footer-list-category">
+                <li class="heading-5"><a href="/">Ana Sayfa<span></span></a></li>
+                <li class="heading-5"><a href="/about-us">Hakkİmİzda<span></span></a></li>
+                <li class="heading-5"><a href="/services">Hizmetler<span></span></a></li>
+                <li class="heading-5"><a href="/blog">Blog<span></span></a></li>
+                <li class="heading-5"><a href="/career">Kariyer<span></span></a></li>
+                <li class="heading-5"><a href="/contact-us">İletişim<span></span></a></li>
+                <li class="heading-5"><a href="/privacy-policy">Gizlilik Politikası<span></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom-panel wow fadeInUp">
+        <p class="rights">TETA <span>&copy;&nbsp;</span><span class="copyright-year"></span></a></span>
+        </p>
+      </div>
+    </footer>
+
+      
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="/static/js/core.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    <!-- coded by Himic-->
+  </body>
+</html>

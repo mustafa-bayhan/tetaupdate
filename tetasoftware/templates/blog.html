@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="tr">
+  <head>
+    <title>TETA | Blog</title>
+    <meta name="Author" content="TETASOFTWARE">
+    <meta name="keywords" content="Teta, Tetasoftware, Dijitalleşme, Sosyal Medya Yönetimi, Veri Analizi, SEO, Web Programlama, Kurumsal Site, E-ticaret, E-ticaret sitesi, Dijital Dönüşüm">
+    <meta name="description" content="Teta Tetasoftware Dijitalleşme ve dijital dönüşüm alanında danışmanlık, kurumsal website tasarımları, sosyal medya yönetimi, e-ticaret ve daha fazlası"/>
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="/media/images/t.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+       <img src="/media/images/teta-logo-2.png" alt="" width="270px">
+      </div>
+    </div>
+    <div class="page">
+      <!-- Top Banner-->
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="/"><img src="/media/images/teta-logo-2.png" alt=""/></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    
+                    <div class="rd-navbar-search">
+                      <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                      <form class="rd-search" action="" method="GET">
+                        {% csrf_token %}
+                        <div class="form-wrap">
+                          <label class="form-label" for="rd-navbar-search-form-input">Ara...</label>
+                          <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                        </div>
+                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                      </form>
+                    </div>
+                    <!-- RD Navbar Share
+                    <div class="rd-navbar-share fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list">
+                      <ul class="list-inline rd-navbar-share-list">
+                        <li class="rd-navbar-share-list-item"><a href="https://www.linkedin.com/company/tetasoftware" target="_blank"><i class="icon fa fa-linkedin"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="https://twitter.com/tetasoftware" target="_blank"><i class="icon fa fa-twitter"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="https://instagram.com/tetasoftware" target="_blank"><i class="icon fa fa-instagram"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="mailto:info@tetasoftware.com" target="_blank"><i class="icon fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>-->
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/">Ana Sayfa</a>
+                      </li>
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="/about-us">Hakkımızda</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/services">Hizmetler</a>
+                      </li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="/blog">Blog</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/career">Kariyer</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/contact-us">İletişim</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="rd-navbar-project-hamburger" data-rd-navbar-toggle=".rd-navbar-main">
+                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                    <div class="project-close"><span></span><span></span></div>
+                  </div>
+                </div>
+                <div class="rd-navbar-project rd-navbar-classic-project">
+                  <h4 class="text-spacing-50">Neler Yaptık?</h4>
+                  <div class="rd-navbar-project-content rd-navbar-classic-project-content">
+                    <div class="row" data-lightgallery="group">
+                      {% for site in website %}
+                      <div class="col-12">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary">
+                          <div class="thumbnail-mary-figure"><a href="{{site.url}}" target="_blank"><img src="{{site.image.url}}" alt="" /></a>
+                          </div>
+                          
+                        </article>
+                      </div>
+                      {% endfor %}
+                      
+                      
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom context-dark bg-overlay-60">
+          <div class="container">
+            <h2 class="breadcrumbs-custom-title">BLOG</h2>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="/">ANA SAYFA</a></li>
+              <li class="active">BLOG</li>
+            </ul>
+          </div>
+          <div class="box-position" style="background-image: url(/media/images/blog.webp);"></div>
+        </div>
+      </section>
+      
+      
+
+<section>
+  <div class="isotope-filters isotope-filters-horizontal" style="margin-top: 40px;">
+    <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true"><span class="icon fa fa-caret-down"></span>FİLTRELER</button>
+    <ul class="isotope-filters-list" id="isotope-3">
+      {% for cat in all_cats%}
+      <li><a href="/blog?q={{cat.name}}">{{cat.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+ 
+
+  <div class="container-blog">
+    <div class="blog-left">
+      <div class="row row-60 row-sm">
+        {% for post in page %}
+        <div class="col-sm-6 wow fadeInLeft">
+          <!-- Post Modern-->
+          <article class="post post-modern"><a class="post-modern-figure" href="/blog/{{post.slug}}"><img src="{{post.image.url}}" width="370" height="307"/>
+              <div class="post-modern-time">
+                <time datetime="2019-07-04"><span class="post-modern-time-number">{{post.publishing_date.day}}</span><span class="post-modern-time-month">{{post.month}}</span></time>
+              </div></a>
+            <h5 class="post-modern-title"><a href="/blog/{{post.slug}}">{{post.title}}</a></h5>
+            <p class="post-modern-text">{{post.summary}} </p>
+          </article>
+        </div>
+        {% endfor %}
+
+        
+        
+      </div>
+      <div class="row" style="margin: auto;margin-top: 50px; margin-bottom: 50px;">
+
+
+        <div id="wrapperrr">
+          <ul id="border-pagination">
+
+
+            {% if page.has_previous %}
+            <li><a href="?page={{ page.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.s %}&s={{ request.GET.s }}{% endif %}">
+              «
+            </a>
+            </li>
+            {% else %}
+            <li><a>
+              «
+            </a>
+            </li>
+            {% endif %}
+            {% if first %}
+                <li><a href="?page=1{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.s %}&s={{ request.GET.s }}{% endif %}">1</a></li>
+            {% endif %}
+            {% if three_dot %}
+                <li><a>...</a></li>
+            {% endif %}
+            {% if page.has_previous %}
+                <li><a href="?page={{ page.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.s %}&s={{ request.GET.s }}{% endif %}">{{ page.previous_page_number }}</a></li>
+            {% endif %}
+            <li><a class = "active">{{page.number}}</a></li>
+            {% if page.has_next %}
+                <li><a href="?page={{ page.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.s %}&s={{ request.GET.s }}{% endif %}">{{ page.next_page_number }}</a></li>
+            {% endif %}
+            {% if last_three %}
+                <li><a>...</a></li>
+              
+            {% endif %}
+            {% if last %}
+                <li><a href="?page={{page.paginator.num_pages}}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.s %}&s={{ request.GET.s }}{% endif %}">{{page.paginator.num_pages}}</a></li>
+            {% endif %}
+            {% if page.has_next %}
+            <li><a href="?page={{ page.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.s %}&s={{ request.GET.s }}{% endif %}">
+              »
+              </a>
+            </li>
+            {% else %}
+            <li><a>
+              »
+              </a>
+            </li>
+            {% endif %}
+          
+          </ul> 
+        </div>
+  
+
+
+
+      </div>
+      
+    </div>
+    <div class="blog-right">
+      
+      
+      <div class="baslık">
+        <h3>ÇOK OKUNANLAR</h3>
+        <hr>
+      </div>
+      {% for most in most_read %}
+      <a href="/blog/{{most.slug}}">
+        <div class="tag-blog">
+          <div class="tag-img">
+              <img src="{{most.image.url}}" alt="" width="150px">
+          </div>
+          <div class="tag-info">
+            <h6>{{most.title}}</h6>
+            <p style="text-transform: uppercase;">{{most.category.name}}</p>
+            <p style="color:rgb(173, 173, 173) ;">{{most.summary}}</p>
+
+          </div>
+        </div>
+<hr>
+      </a>
+      {% endfor %}
+
+
+     
+    </div>
+  </div>
+</section>
+      
+<script>
+  $("select").on("click" , function() {
+
+$(this).parent(".select-box").toggleClass("open");
+
+});
+
+$(document).mouseup(function (e)
+{
+var container = $(".select-box");
+
+if (container.has(e.target).length === 0)
+{
+    container.removeClass("open");
+}
+});
+
+
+$("select").on("change" , function() {
+
+var selection = $(this).find("option:selected").text(),
+  labelFor = $(this).attr("id"),
+  label = $("[for='" + labelFor + "']");
+
+label.find(".label-desc").html(selection);
+
+});
+</script>
+
+
+
+
+      
+
+<footer class="section section-fluid footer-classic">
+        <div class="container-fluid">
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
+              <div class="box-footer box-footer-small">
+                <div class="footer-brand"><a href="index.html"><img src="/media/images/teta-logo-2.png" alt="" width="229" height="43"/></a></div>
+                <p class="text-width-medium">TETA Software & Consultancy, sektörün dinamiklerini çok iyi bilen, insan odaklı, müşterilerinin gereksinimlerinin farkında, özgün ve yaratıcı fikirler ortaya çıkarmakta profesyonel bir ekibin ürünüdür.</p>
+                <div class="contact-classic">
+                  <div class="contact-classic-item"></div>
+                  <div class="contact-classic-item">
+                    <div class="unit align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">Sosyal Medyada Biz</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">Tüm sosyal medyalarda @tetasoftware</div>
+                    </div>
+                  </div>
+                  <div class="contact-classic-item">
+                    <div class="unit align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">Neredeyiz</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">Ankara, İstanbul, Adana, Mersin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-classic-item">
+                    <div class="unit align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">E-posta adresimiz</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link"><a href="mailto:info@tetasoftware.com"> info@tetasoftware.com</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-inline list-inline-sm footer-social-list">
+                  <li><a class="icon fa-brands fa-envelope" href="mailto:info@tetasoftware.com"></a></li>
+                  <li><a class="icon fa fa-twitter" href="https://twitter.com/tetasoftware"></a></li>
+                  <li><a class="icon fa fa-linkedin" href="https://www.linkedin.com/company/tetasoftware"></a></li>
+                  <li><a class="icon fa fa-instagram" href="https://instagram.com/tetasoftware"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <div class="box-footer">
+                <h3 class="font-weight-normal">HİZMETLER</h3>
+                <ul class="footer-list-category">
+                  <li class="heading-5"><a href="/services">Web site tasarİmİ<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Marka tasarİmİ<span></span></a></li>
+                  <li class="heading-5"><a href="/services">E-ticaret çözümleri<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Dijital tasarİm<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Sosyal medya yönetimi<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Analizler ve planlamalar<span></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
+              <div class="box-footer">
+                <h3 class="font-weight-normal">GEZİNTİ</h3>
+                <ul class="footer-list-category">
+                  <li class="heading-5"><a href="/">Ana Sayfa<span></span></a></li>
+                  <li class="heading-5"><a href="/about-us">Hakkİmİzda<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Hizmetler<span></span></a></li>
+                  <li class="heading-5"><a href="/blog">Blog<span></span></a></li>
+                  <li class="heading-5"><a href="/career">Kariyer<span></span></a></li>
+                  <li class="heading-5"><a href="/contact-us">İletişim<span></span></a></li>
+                  <li class="heading-5"><a href="/privacy-policy">Gizlilik Politikası<span></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-bottom-panel wow fadeInUp">
+          <p class="rights">TETA <span>&copy;&nbsp;</span><span class="copyright-year"></span></a></span>
+          </p>
+        </div>
+      </footer>
+
+      
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="/static/js/core.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    <!-- coded by Himic-->
+  </body>
+</html>

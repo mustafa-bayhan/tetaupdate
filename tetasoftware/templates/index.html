@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="tr">
+  <head>
+    <title>TETA Software & Consultancy - Dijitale Açılan Kapı</title>
+    <meta name="Author" content="TETASOFTWARE">
+    <meta name="keywords" content="Teta, Tetasoftware, Dijitalleşme, Sosyal Medya Yönetimi, Veri Analizi, SEO, Web Programlama, Kurumsal Site, E-ticaret, E-ticaret sitesi, Dijital Dönüşüm">
+    <meta name="description" content="Teta Tetasoftware Dijitalleşme ve dijital dönüşüm alanında danışmanlık, kurumsal website tasarımları, sosyal medya yönetimi, e-ticaret ve daha fazlası"/>
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/t.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+       <img src="/media/images/teta-logo-2.png" alt="" width="270px">
+      </div>
+    </div>
+    <div class="page">
+      <!-- Top Banner-->
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="/"><img src="/media/images/teta-logo-2.png" alt=""/></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    
+                    <div class="rd-navbar-search">
+                      <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                      <form class="rd-search" action="" method="GET">
+                        {% csrf_token %}
+                        <div class="form-wrap">
+                          <label class="form-label" for="rd-navbar-search-form-input">Ara...</label>
+                          <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                        </div>
+                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                      </form>
+                    </div>
+                    <!-- RD Navbar Share
+                    <div class="rd-navbar-share fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list">
+                      <ul class="list-inline rd-navbar-share-list">
+                        <li class="rd-navbar-share-list-item"><a href="https://www.linkedin.com/company/tetasoftware" target="_blank"><i class="icon fa fa-linkedin"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="https://twitter.com/tetasoftware" target="_blank"><i class="icon fa fa-twitter"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="https://instagram.com/tetasoftware" target="_blank"><i class="icon fa fa-instagram"></i></a></li>
+                        <li class="rd-navbar-share-list-item"><a href="mailto:info@tetasoftware.com" target="_blank"><i class="icon fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>-->
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Ana Sayfa</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">Hakkımızda</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/services">Hizmetler</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/blog">Blog</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/career">Kariyer</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="/contact-us">İletişim</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="rd-navbar-project-hamburger" data-rd-navbar-toggle=".rd-navbar-main">
+                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                    <div class="project-close"><span></span><span></span></div>
+                  </div>
+                </div>
+                <div class="rd-navbar-project rd-navbar-classic-project">
+                  <h4 class="text-spacing-50">Neler Yaptık?</h4>
+                  <div class="rd-navbar-project-content rd-navbar-classic-project-content">
+                    <div class="row" data-lightgallery="group">
+                      {%for site in website%}
+                        <div class="col-12">
+                          <!-- Thumbnail Classic-->
+                          <article class="thumbnail thumbnail-mary">
+                            <div class="thumbnail-mary-figure"><a href="{{site.url}}" target="_blank"><img src="{{site.image.url}}" alt="" /></a>
+                            </div>
+                            
+                          </article>
+                        </div>
+                      {% endfor %}
+                      
+              
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+        <div class="swiper-wrapper text-center">
+          <div class="swiper-slide context-dark" data-slide-bg="/media/images/1.webp">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">WEB SİTE TASARIMI</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Dijitalde yerinizi alın! Her işletmenin bir web sitesine ihtiyacı vardır.</p>
+                <a class="button button-width-xl-230 button-primary button-pipaluk" href="/contact-us" data-caption-animate="fadeInUp" data-caption-delay="200">HEMEN TEKLİF AL</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="/media/images/5.webp">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">MOBİL UYGULAMA YAZILIMI</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">İsteklerinizi tam anlamıyla karşılayan mobil yazılım desteğiyle kitlenize harika bir deneyim sunabilirsiniz.</p>
+                <a class="button button-width-xl-230 button-primary button-pipaluk" href="/contact-us" data-caption-animate="fadeInUp" data-caption-delay="200">HEMEN TEKLİF AL</a>
+            
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="/media/images/3.webp">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">MARKA TASARIMI</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Kitlenize markanızla ilgili bir deneyim sunmakla kalmaz, aynı zamanda hedef kitlenizin markanızdan ne bekleyebileceğini de tam olarak bilmesini sağlar</p>
+                <a class="button button-width-xl-230 button-primary button-pipaluk" href="/contact-us" data-caption-animate="fadeInUp" data-caption-delay="200">HEMEN TEKLİF AL</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="/media/images/5.webp">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">SOSYAL MEDYA YÖNETİMİ</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Facebook, Instagram ve Twitter gibi sosyal medya platformlarında yayınlanan içerik oluşturma, planlama, analiz etme ve bunlar sayesinde bu platformu kullanan hedef kitle ile etkileşimde bulunma sürecidir.</p>
+                <a class="button button-width-xl-230 button-primary button-pipaluk" href="/contact-us" data-caption-animate="fadeInUp" data-caption-delay="200">HEMEN TEKLİF AL</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="/media/images/7.webp">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">ANALİZLER & PLANLAMALAR</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Üretimden finansal verilere kadar tüm veriler analiz edilip sizin için en uygun planlamayı yapıyoruz. Kısa ve uzun vade hedeflerinize daha hızlı yaklaştırıyoruz.</p>
+                <a class="button button-width-xl-230 button-primary button-pipaluk" href="/contact-us" data-caption-animate="fadeInUp" data-caption-delay="200">HEMEN TEKLİF AL</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="/media/images/7.webp">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">DİJİTAL PAZARLAMA & SATIŞ STRATEJİLERİ</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">İyi reklam iyi satışları getirir. Uzmanıyla çalışın en iyisine ulaşın.</p>
+                <a class="button button-width-xl-230 button-primary button-pipaluk" href="/contact-us" data-caption-animate="fadeInUp" data-caption-delay="200">HEMEN TEKLİF AL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination__module">
+          <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span></div>
+          <div class="swiper-pagination__divider"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- See all services-->
+      <section class="section section11 section-sm section-first bg-default text-center" id="info">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+              <div class="section-title pxl">HAKKIMIZDA</div>
+                    <h2>İŞLETMENİZ İÇİN HER ZAMAN DAHA İYİSİNİ HEDEFLİYORUZ</h2>
+                    <p>TETA, sektörün dinamiklerini çok iyi bilen, insan odaklı, müşterilerinin gereksinimlerinin farkında, özgün ve yaratıcı fikirler ortaya çıkarmakta profesyonel bir ekibin ürünüdür. </p>
+                    <a class="button button-default-outline button-wapasha" href="/about-us">DAHA FAZLA</a>
+                    <a class="button button-primary button-ujarak" href="/contact-us" data-caption-animate="fadeInUp" style="margin-left: 10px; margin-right: 10px;">HEMEN TEKLİF AL</a>
+                    
+                  </div>
+            <div class="col-lg-7 col-xl-6">
+              <div class="row row-30">
+                <div class="col-sm-6 wow fadeInRight">
+                  <article class="box-icon-modern box-icon-modern-custom">
+                    <div>
+                      <h3 class="box-icon-modern-big-title">TÜM HİZMETLER</h3>
+                      <div class="box-icon-modern-decor"></div><a class="button button-md button-default-outline-2 button-wapasha" href="/services">HİZMETLER</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <div class="box-icon-modern-icon fl-bigmug-line-monitor74"></div>
+                    <h5 class="box-icon-modern-title">WEB SİTE TASARIMI</h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">Kurumsal web site <br>E-ticaret sitesi <br>Blog sitesi</p>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <div class="box-icon-modern-icon fl-bigmug-line-paintbrush9"></div>
+                    <h5 class="box-icon-modern-title">DİJİTAL TASARIM</h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">Logo <br>Roll up <br>Broşür </p>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <div class="box-icon-modern-icon fl-bigmug-line-three142"></div>
+                    <h5 class="box-icon-modern-title">Analiz ve Planlama</h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">Veri analizi <br>Kaynak yönetimi <br>Dijital pazarlama</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    
+      <section class="section section-sm section-fluid bg-default text-center" style="margin-bottom: 80px;" >
+        <div class="container-fluid">
+          <h3 class="wow fadeInUp">PROJELERİMİZDEN SADECE BİRKAÇI</h3> 
+          <div class="isotope-filters isotope-filters-horizontal">
+            <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true"><span class="icon fa fa-caret-down"></span>FİLTRELER</button>
+            <ul class="isotope-filters-list" id="isotope-3">
+              <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">Hepsi</a></li>
+              <li><a href="#" data-isotope-filter="web" data-isotope-group="gallery">Web site</a></li>
+              <li><a href="#" data-isotope-filter="dijital" data-isotope-group="gallery">Dijital Tasarım</a></li>
+            </ul>
+          </div>
+
+          <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+          {%for site in all_web%}
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="{{site.category}}"> 
+              <article class="thumbnail thumbnail-classic thumbnail-lg">
+                <div class="thumbnail-classic-figure"><img src="{{site.image.url}}" alt="site" /></div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap">
+                    <a class="icon fl-bigmug-line-zoom60" style="color: #dadada;" href="{{site.image.url}}" data-lightgallery="item">
+                      <img src="{{site.image.url}}" alt="" width="420" height="350"/>
+                    </a>
+                    
+                    <h5 class="thumbnail-classic-title" style="font-size: 19px;">TAHİR AKPUNAR ANAOKULU VE KREŞ MOBİLYALARI</h5>
+                    <a href="{{site.url}}" target="_blank" style="color: rgb(207, 207, 207);font-size: 17px;">PROJEYİ İNCELE</a><br>
+                  </div>
+                  <p class="thumbnail-classic-text" style="color: rgb(199, 199, 199); font-size: 17px;">KURUMSAL WEB SİTESİ PROJESİ</p>
+                  <p class="thumbnail-classic-text" style="color: rgba(204, 204, 204, 0.726);font-size: 17px;">EKONOMİK PAKET</p>
+                </div>
+              </article>
+            </div>
+          {% endfor %}
+          </div>
+          
+        </div>
+      </section>
+
+
+     <!-- You dream — we embody-->
+     <section class="section section11 section-sm bg-default text-md-left wow fadeInUp">
+      <div class="container">
+        <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
+          <div class="col-lg-6 col-xl-5 wow fadeInLeft">
+            <h3>NEDEN BİZ?</h3>
+            <!-- Bootstrap tabs-->
+            <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big text-center text-md-left" id="tabs-6">
+              <!-- Nav tabs-->
+              <ul class="nav nav-tabs">
+                <li class="nav-item" role="presentation"><a class="nav-link nav-link-big active" href="#tabs-6-1" data-toggle="tab">01</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-2" data-toggle="tab">02</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3" data-toggle="tab">03</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4" data-toggle="tab">04</a></li>
+              </ul>
+              <!-- Tab panes-->
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tabs-6-1">
+                  <h5 class="font-weight-normal">7/24 KESİNTİSİZ HİZMET</h5>
+                  <p>TETA, sektördeki en yenilikçi ve özelleştirilmiş iş hizmetlerini sunar. Her türlü bütçe için farklı paketler ve çalışma imkanları sağlar. <br>Hizmet süresi boyunca kesintisiz hizmet garantisiyle firmanız için en uygun planlamaları ve çalışmaları sizin için sağlar. </p>
+                  <div class="group-md group-middle">
+                    <a class="button button-secondary button-pipaluk" href="/contact-us">HEMEN TEKLİF AL</a>
+                    <a class="button button-default-outline button-wapasha" href="/about-us">DAHA FAZLA BİLGİ</a></div>
+                </div>
+                <div class="tab-pane fade" id="tabs-6-2">
+                  <h5 class="font-weight-normal">UZMAN EKİP </h5>
+                  <p>Hizmetleri sunma şeklimiz söz konusu olduğunda <strong> yüksek kalite </strong> listemizin başında gelir. <br>
+                    Yaptığımız her hamle, geliştirdiğimiz her işteki amaç <strong>maksimum etkiyi </strong> yapmaktır.<br>
+                    
+                  </p>
+                  <div class="group-md group-middle">
+                    <a class="button button-secondary button-pipaluk" href="/contact-us">HEMEN TEKLİF AL</a>
+                    <a class="button button-default-outline button-wapasha" href="/about-us">DAHA FAZLA BİLGİ</a></div>
+                </div>
+                <div class="tab-pane fade" id="tabs-6-3">
+                  <h5 class="font-weight-normal">KALİTE STANDARTLARI</h5>
+                  <p>Müşterilerimiz için <strong>%100 memnuniyet</strong> sağlamayı hedefliyoruz ve buna göre çalışmalarımızı sürdürüyoruz. <br>
+                    Amacımız, şirketinizin tam potansiyeline ulaşmasına yardımcı olmak ve paydaşlar için uzun vadeli istikrar sağlamaktır. <br>
+                  </p>
+                  <div class="group-md group-middle">
+                    <a class="button button-secondary button-pipaluk" href="/contact-us">HEMEN TEKLİF AL</a>
+                    <a class="button button-default-outline button-wapasha" href="/about-us">DAHA FAZLA BİLGİ</a></div>
+                </div>
+                <div class="tab-pane fade" id="tabs-6-4">
+                  <h5 class="font-weight-normal">ANALİZ</h5>
+                  <p>Pazar ve piyasadaki diğer rakiplerinizi<strong> analiz </strong>ediyoruz. <br>
+                  Yeni eğilimlere ve teknolojik gelişmelere göre tüm planlamalarımızı yapıyoruz. 
+                  İşletmenizin büyümesinin önündeki tüm engelleri tespit edip onlardan kurtuluyoruz.
+
+                  </p>
+                  <div class="group-md group-middle">
+                    <a class="button button-secondary button-pipaluk" href="/contact-us">HEMEN TEKLİF AL</a>
+                    <a class="button button-default-outline button-wapasha" href="/about-us">DAHA FAZLA BİLGİ</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
+            <div class="accordion-wrapper">
+              <h3>SIK SORULAN SORULAR</h3>
+              <div class="accordion">
+                <input class="inpu" type="radio" name="radio-a" id="check1" checked>
+                <label class="accordion-label" for="check1">Web site yapımı yaklaşık kaç gün sürer?</label>
+                <div class="accordion-content">
+                  <p>İsteklerinize göre değişmekle beraber yaklaşık 7 ile 21 iş günü sürmektedir.</p>
+                </div>
+              </div>
+              <div class="accordion">
+                <input class="inpu" type="radio" name="radio-a" id="check2">
+                <label class="accordion-label" for="check2">Sosyal medya yönetimi nedir?</label>
+                <div class="accordion-content">
+                  <p>İşletmenizin dijital varlıkları olan sosyal medyalar bazen yoğun iş hayatında görmezden gelinebiliyor. Siz hiç rahatınızı bozmayın, biz sizin yerinize markanızın resmi hesaplarına içerik üretip, tüm hesaplarınızın yönetimini profesyonelce yaparız.</p>
+                </div>
+              </div>
+              <div class="accordion">
+                <input class="inpu" type="radio" name="radio-a" id="check3">
+                <label class="accordion-label" for="check3">Analiz ve planlamalar nasıl yapılır?</label>
+                <div class="accordion-content">
+                  <p>İşletmenizin büyümesi için gerekli tüm sayısal veriler incelenip düzenlendikten sonra, kısa ve uzun vade hedefleri belirlenip buna uygun planlama yapılır.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
+            <div class="figure-classic figure-classic-right"><img src="/media/images/1.webp" alt="" width="556" height="434"/></div>
+          </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-fluid bg-default wow fadeInUp" style="margin: 50px 0;">
+      <div class="parallax-container" data-parallax-img="/media/images/about.webp">
+        <div class="parallax-content section-xl context-dark bg-overlay-26">
+          <div class="container">
+            <div class="row row-50 justify-content-center border-classic">
+              <div class="col-sm-6 col-md-5 col-lg-3">
+                <div class="counter-classic">
+                  <div class="counter-classic-number"><span class="counter">100</span><span class="symbol">'lerce</span>
+                  </div>
+                  <h5 class="counter-classic-title">PROJE</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-5 col-lg-3">
+                <div class="counter-classic">
+                  <div class="counter-classic-number"><span class="counter">5</span><span class="symbol">+</span><span class="symbol">&nbsp; YIL</span>
+                  </div>
+                  <h5 class="counter-classic-title">DENEYİM</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-5 col-lg-3">
+                <div class="counter-classic">
+                  <div class="counter-classic-number"><span class="counter">1000</span><span class="symbol">'lerce</span>
+                  </div>
+                  <h5 class="counter-classic-title">TASARIM</h5>
+                </div>
+              </div>
+              
+              <div class="col-sm-6 col-md-5 col-lg-3">
+                <div class="counter-classic">
+                  <div class="counter-classic-number"><span class="counter">12</span>
+                  </div>
+                  <h5 class="counter-classic-title">EKİP ÜYESİ</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      
+      <section class="section section11 section-sm section-last bg-default wow fadeInUp">
+        <div class="container wow fadeInUp" style="max-width: 1250px;">
+          <h3 style="text-align: center; margin-bottom: -35px;">MÜŞTERİLERİMİZİN YORUMLARI</h3>
+          
+          <div class="owl-carousel owl-modern" data-items="1" data-md-items="1" data-lg-items="2" data-xl-items="2" data-stage-padding="15" data-margin="20" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay="true">
+        
+            {% for comment in customer_comments %}
+             
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="{{comment.customer_image.url}}" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h5 class="quote-modern-cite">{{comment.customer_name}}</h5>
+                    <p class="quote-modern-status">{{comment.customer_profession}} <br><a href="{{comment.website_url}}" target="_blank"> {{comment.website_name}}</a> </p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">{{comment.content}}</p>
+                </div>
+              </article>
+          
+            
+            {% endfor %}
+
+        </div>
+        </div>
+      </section>
+
+      
+       
+
+      
+
+
+
+
+      <section class="section section-sm section-fluid bg-default wow fadeInUp">
+        <div class="container-fluid">
+          <h3 style="text-align: center; margin-bottom: -55px;">DUYURULAR</h3>
+        </div>
+   
+        <div class="owl-carousel owl-classic owl-timeline" style="width: 95%;" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="4" data-margin="30" data-autoplay="true" data-nav="false" data-dots="false">
+          {% for duyuru in duyurular %}
+          <div class="owl-item">
+            
+            <article class="team-classic team-classic-lg"><div class="team-classic-figure"><img src="{{duyuru.image.url}}" /></div>
+              <div class="team-classic-caption">
+                <p class="team-classic-status">{{duyuru.body}}</p>
+              </div>
+            </article>
+            <div class="thumbnail-mary-description" style="text-align: center;">
+              <h5 class="thumbnail-mary-project">Duyuru</h5><br><span class="thumbnail-mary-decor"></span>
+              <h5 class="thumbnail-mary-time">
+                <time>{{duyuru.pure_date}}</time>
+              </h5>
+            </div>
+          </div>
+          {%endfor%}
+
+
+        
+        
+
+      </section>
+
+
+
+
+      <section class="section section11 section-sm section-last bg-default wow fadeInUp">
+        <div class="container wow fadeInUp" style="max-width: 1248px;">
+          <h3 style="text-align: center; margin-bottom: -35px;">SON BLOG PAYLAŞIMLARI</h3>
+          
+          <div class="owl-carousel owl-modern" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="3" data-stage-padding="15" data-margin="15" data-dots="false" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay="true">
+        
+              {%for post in last_posts %}
+              <div class="wow fadeInLeft">
+                <!-- Post Modern-->
+                <article class="post post-modern"><a class="post-modern-figure" href="/blog/{{post.slug}}"><img src="{{post.image.url}}" alt=""/>
+                    <div class="post-modern-time">
+                      <time datetime="2019-07-04"><span class="post-modern-time-number">{{post.publishing_date.day}}</span><span class="post-modern-time-month">{{post.month}}</span></time>
+                    </div></a>
+                  <h5 class="post-modern-title"><a href="/blog/{{post.slug}}">{{post.title}}</a></h5>
+                  <p class="post-modern-text">{{post.summary}} </p>
+                </article>
+              </div>
+  
+              {% endfor %}
+              
+              
+
+        </div>
+        </div>
+      </section>
+
+      <section class="section section-sm section-fluid bg-default " style="margin-bottom: 80px;">
+        <div class="container-fluid">
+          <h3 style="text-align: center; margin-bottom: -75px;">INSTAGRAM'DA BİZ</h3>
+        </div>
+   
+        <div class="owl-carousel owl-classic owl-timeline" style="width: 97%;" data-items="1" data-md-items="3" data-lg-items="6" data-xl-items="6" data-margin="5" data-autoplay="false" data-nav="false" data-dots="false">
+          {% for insta in instagram %}
+          <div class="owl-item">
+            <a href="{{insta.url}}" target="_blank">
+            <article class="team-classic team-classic-lg"><div class="team-classic-figure team-classic-figurea"><img src="{{insta.image.url}}" height="100%" width="100%"/></div>
+              <div class="team-classic-captionn">
+                <p class="team-classic-status">{{insta.body}}</p>
+              </div>
+            </article>
+            <div class="thumbnail-mary-description" style="text-align: center;">
+              <span class="thumbnail-mary-decor"></span>
+              <h5 class="thumbnail-mary-time">
+                <time>{{insta.date}}</time>
+              </h5>
+            </div>
+            </a>
+          </div>
+          {% endfor %}
+
+          
+
+        
+        </div>
+
+        
+        
+
+      </section>
+        
+
+
+      
+
+      <footer class="section section-fluid footer-classic">
+        <div class="container-fluid">
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
+              <div class="box-footer box-footer-small">
+                <div class="footer-brand"><a href="index.html"><img src="/media/images/teta-logo-2.png" alt="" width="229" height="43"/></a></div>
+                <p class="text-width-medium">TETA Software & Consultancy, sektörün dinamiklerini çok iyi bilen, insan odaklı, müşterilerinin gereksinimlerinin farkında, özgün ve yaratıcı fikirler ortaya çıkarmakta profesyonel bir ekibin ürünüdür.</p>
+                <div class="contact-classic">
+                  <div class="contact-classic-item"></div>
+                  <div class="contact-classic-item">
+                    <div class="unit align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">Sosyal Medyada Biz</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">Tüm sosyal medyalarda @tetasoftware</div>
+                    </div>
+                  </div>
+                  <div class="contact-classic-item">
+                    <div class="unit align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">Neredeyiz</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">Ankara, İstanbul, Adana, Mersin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-classic-item">
+                    <div class="unit align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">E-posta adresimiz</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link"><a href="mailto:info@tetasoftware.com"> info@tetasoftware.com</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-inline list-inline-sm footer-social-list">
+                  <li><a class="icon fa-brands fa-envelope" href="mailto:info@tetasoftware.com"></a></li>
+                  <li><a class="icon fa fa-twitter" href="https://twitter.com/tetasoftware"></a></li>
+                  <li><a class="icon fa fa-linkedin" href="https://www.linkedin.com/company/tetasoftware"></a></li>
+                  <li><a class="icon fa fa-instagram" href="https://instagram.com/tetasoftware"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <div class="box-footer">
+                <h3 class="font-weight-normal">HİZMETLER</h3>
+                <ul class="footer-list-category">
+                  <li class="heading-5"><a href="/services">Web site tasarİmİ<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Marka tasarİmİ<span></span></a></li>
+                  <li class="heading-5"><a href="/services">E-ticaret çözümleri<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Dijital tasarİm<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Sosyal medya yönetimi<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Analizler ve planlamalar<span></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
+              <div class="box-footer">
+                <h3 class="font-weight-normal">GEZİNTİ</h3>
+                <ul class="footer-list-category">
+                  <li class="heading-5"><a href="/">Ana Sayfa<span></span></a></li>
+                  <li class="heading-5"><a href="/about-us">Hakkİmİzda<span></span></a></li>
+                  <li class="heading-5"><a href="/services">Hizmetler<span></span></a></li>
+                  <li class="heading-5"><a href="/blog">Blog<span></span></a></li>
+                  <li class="heading-5"><a href="/career">Kariyer<span></span></a></li>
+                  <li class="heading-5"><a href="/contact-us">İletişim<span></span></a></li>
+                  <li class="heading-5"><a href="/privacy-policy">Gizlilik Politikası<span></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-bottom-panel wow fadeInUp">
+          <p class="rights">TETA <span>&copy;&nbsp;</span><span class="copyright-year"></span></a></span>
+          </p>
+        </div>
+      </footer>
+
+
+      
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="/static/js/core.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+  </body>
+</html>
